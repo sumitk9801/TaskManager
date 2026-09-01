@@ -30,7 +30,7 @@ function App() {
       setLoading(false);
     }
   };
-  const unusedVariable = 'This variable is declared but never used';
+  // const unusedVariable = 'This variable is declared but never used';
   const handleAddTask = async (taskData) => {
     try {
       const response = await taskService.createTask(taskData);
