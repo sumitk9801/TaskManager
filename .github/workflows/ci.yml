@@ -48,6 +48,7 @@ jobs:
     needs: build-and-lint
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
+    environment: EC2
     steps:
       - name: Checkout (optional)
         uses: actions/checkout@v4
